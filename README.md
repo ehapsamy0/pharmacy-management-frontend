@@ -33,7 +33,7 @@ This repository contains the **React** frontend for the **Pharmacy Management Sy
 
 The React frontend interacts with a Django REST API, with full documentation available at:
 
-[API Documentation](http://63.176.52.228:8000/api/docs/)
+[API Documentation](http://54.93.64.211:8000/api/docs/)
 
 This provides details on each endpoint, request/response structures, and authentication requirements.
 
@@ -44,7 +44,7 @@ This provides details on each endpoint, request/response structures, and authent
 ### Prerequisites
 
 - **Docker** and **Docker Compose** installed on your machine.
-- Access to the backend API at `http://63.176.52.228:8000/api`.
+- Access to the backend API at `http://54.93.64.211:8000/api`.
 
 ### Environment Variables
 
@@ -52,7 +52,7 @@ Create a `.env` file in the root directory and configure the following environme
 
 ```dotenv
 # API Base URL
-REACT_APP_API_URL=http://63.176.52.228:8000/api
+REACT_APP_API_URL=http://54.93.64.211:8000/api
 ```
 
 This `.env` file ensures the React app correctly points to the backend API.
@@ -173,7 +173,7 @@ This will build and run the container as configured in `docker-compose.yml`.
 
 1. **API Connectivity Issues**:
    - Ensure the backend API URL is correctly set in the `.env` file.
-   - Check if the backend API server is up and accessible at `http://63.176.52.228:8000`.
+   - Check if the backend API server is up and accessible at `http://54.93.64.211:8000`.
 
 2. **Docker Issues**:
    - Run `docker logs <container_id>` to check the logs for any errors.
