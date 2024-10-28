@@ -14,13 +14,19 @@ function Navbar() {
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           Pharmacy Management System
         </Typography>
-        <Button color="inherit" component={Link} to="/login">
-          Login
-        </Button>
-        <Button color="inherit" component={Link} to="/register">
-          Register
-        </Button>
+        {!user && (
+          <>
+            <Button color="inherit" component={Link} to="/login">
+              Login
+            </Button>
+            <Button color="inherit" component={Link} to="/register">
+              Register
+            </Button>
+          </>
+
         
+        )}
+
         {user && (
           <Button onClick={handleLogout} color="inherit">
             {" "}
