@@ -23,7 +23,7 @@ const PendingRefillRequests = ({
         <ListItem key={request.id}>
           <ListItemText
             primary={`Medication: ${request.medication?.name}`}
-            secondary={`Requested by: ${request.patient}, Quantity: ${request?.medication?.quantity_requested}`}
+            secondary={`Requested by: ${request.patient}, Quantity: ${request?.quantity_requested}`}
           />
           {userRole == "pharmacist" && (
             <Button
