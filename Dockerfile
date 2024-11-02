@@ -1,11 +1,13 @@
 # Stage 1: Build React App
-FROM node:16 as build
+FROM node:16 AS build
 
 WORKDIR /app
+
+# Install dependencies first, using Docker cache if package files haven't changed
 COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy the rest of the application code and build
+# Copy the rest of the application code and build the project
 COPY . .
 RUN npm run build
 
